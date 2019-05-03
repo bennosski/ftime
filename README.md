@@ -1,8 +1,8 @@
 # profile
 
-A decorator to profile function runtime. 
+A decorator to profile function performance. 
 Simply add the ```@timed``` decorator to any function or class methods for which to measure runtime. 
-Upon exit of your program, detailed profiling information is neatly printed to the console including:
+Upon exit of your program, detailed timing information is neatly printed to the console including:
    - number of function calls
    - total runtime for each function
    - average runtime for each function
