@@ -45,3 +45,5 @@ output:
 ```
 
 Note: in this example ```f()``` is called from within ```g()``` so the percentages may add to over 100% because both functions were running at the same time (the runtime of ```f()``` was part of the runtime for ```g()```). The percentage represents total runtime of the function as a fraction of the total program runtime. 
+
+Install with ```pip install ftime```
