@@ -1,25 +1,24 @@
-# profile
+# ftime
 
 A decorator to profile function performance. 
 Simply add the ```@timed``` decorator to any function or class method for which to measure runtime. 
-Call ```timed.results()``` to print detailed timing information to the console including:
+Call ```timed.results()``` to neatly print detailed timing information to the console including:
    - number of function calls
    - total runtime for each function
    - average runtime for each function
    - total runtime of the program
    
 ```ruby
-import time
-from profiler import timed
+from ftime import timed
 
 @timed
 def f():
-    time.sleep(0.1)
+    return [0 for i in range(10000)]
 
 @timed
 def g():
-    time.sleep(0.2)
     f()
+    return [0 for i in range(10000)]
     
 f()
 g()
