@@ -1,1 +1,1 @@
-from profiler.profiler import timed
+from ftime.ftime import timed
