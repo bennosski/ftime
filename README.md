@@ -14,13 +14,13 @@ from ftime import timed
 
 @timed
 def f():
-    return [i*j for i in range(1000) for j in range(1000)]
+    [i*j for i in range(1000) for j in range(1000)]
     
 
 @timed
 def g():
     f()
-    return [i**i for i in range(1000)]
+    [i**i for i in range(1000)]
 
     
 f()
