@@ -1,15 +1,17 @@
 import time
 from profiler import timed
 
-
 @timed
 def f():
-    print('hi')
+    time.sleep(0.1)
 
 @timed
 def g():
-    print('there')
-
-f()
+    time.sleep(0.2)
+    f()
+    
 f()
 g()
+
+# print the profiler results to the screen
+timed.results()
