@@ -1,7 +1,7 @@
 import setuptools
 setuptools.setup(
     name='ftime',
-    version='1.0',
+    version='1.1',
     author='Ben Nosarzewski',
     description='A decorator to profile function runtime',
     url='https://github.com/bennosski/ftime/',
