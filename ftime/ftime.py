@@ -69,7 +69,7 @@ class timed:
         print(' '+'-'*space+' ')
         print('|'+' '*s1+'Runtime Profile'+' '*s2+'|')
         print('|'+'-'*space+'|')
-        print('| {:{}s}   {:{}s}  | {:{}s}  | total time | time/call  |'.format('name', max_name_len, '', max_ncall_len, '  %', max_percent_len))
+        print('| {:{}s}   {:{}s}  | total time | time/call  | {:{}s}  |'.format('name', max_name_len, '', max_ncall_len, '  %', max_percent_len))
         print('|'+'-'*space+'|')        
     
         for i,fname in enumerate(fnames):
@@ -78,8 +78,8 @@ class timed:
             else:
                 tavg_str = '{:.3e}s'.format(totals[i]/ncalls[i])
 
-            print('| {:{}s} (x{:{}d}) | {:0{}.1f}% | {:.3e}s | {} |'.format(fname, max_name_len, ncalls[i], max_ncall_len, percents[i], max_percent_len, totals[i], tavg_str))
+            print('| {:{}s} (x{:{}d}) | {:.3e}s | {} | {:0{}.1f}% |'.format(fname, max_name_len, ncalls[i], max_ncall_len, totals[i], tavg_str, percents[i], max_percent_len))
 
         print('|'+'-'*space+'|')
-        print('| {:{}s}{:{}s}    {:{}s}  | {:.3e}s | {:9s}  |'.format('program', max_name_len, '', max_ncall_len, '', max_percent_len, program_run_time, ''))
+        print('| {:{}s}{:{}s}  | {:.3e}s | {:9s}    {:{}s}  |'.format('program', max_name_len, '', max_ncall_len, program_run_time, '', '', max_percent_len))
         print(' '+'-'*space+' ')
