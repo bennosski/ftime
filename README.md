@@ -1,8 +1,8 @@
 # profile
 
 A decorator to profile function performance. 
-Simply add the ```@timed``` decorator to any function or class methods for which to measure runtime. 
-Call timed.results() to print detailed timing information to the console including:
+Simply add the ```@timed``` decorator to any function or class method for which to measure runtime. 
+Call ```timed.results()``` to print detailed timing information to the console including:
    - number of function calls
    - total runtime for each function
    - average runtime for each function
