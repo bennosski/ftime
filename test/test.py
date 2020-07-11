@@ -1,5 +1,4 @@
-import time
-from profiler import timed
+from ftime import timed
 
 @timed
 def f():
