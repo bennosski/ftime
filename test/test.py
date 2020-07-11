@@ -2,12 +2,12 @@ from ftime import timed
 
 @timed
 def f():
-    time.sleep(0.1)
+    return [i**i for i in range(1000)]
 
 @timed
 def g():
-    time.sleep(0.2)
-    f()
+    return [i*j for i in range(1000) for j in range(1000)]
+    
     
 f()
 g()
